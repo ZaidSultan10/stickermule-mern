@@ -1,11 +1,11 @@
 .navbar{
     background-color: #4e2817;
-    height: 40px;
+    height: 42px;
     padding-left: 10px;
     padding-right: 10px;
 
     .navbar__container{
-        height: 40px;
+        height: 42px;
         margin: 0 auto;
         max-width: 1000px;
         display: flex;
@@ -18,12 +18,12 @@
             align-items: center;
             // justify-content: space-around;
             .navbar__left__logo{
-                height: 40px;
-                width: 41px;
+                height: 35px;
+                width: 36px;
             }
             a{
                 margin-left: 30px;
-                // margin-top: -5px;
+                margin-top: -3px;
                 color: white;
                 text-decoration: none;
                 font-weight: bold;
@@ -38,10 +38,11 @@
             // justify-content: space-around;
             .navbar__right__cart{
                 color: white !important;
+                font-size: 20px;
             }
             a{
                 margin-left: 30px;
-                // margin-top: -5px;
+                margin-top: -3px;
                 color: white;
                 text-decoration: none;
                 font-weight: bold;

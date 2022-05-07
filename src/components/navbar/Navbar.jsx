@@ -11,6 +11,8 @@ const Navbar = () => {
                 <img src={Logo} className='navbar__left__logo' />
                 <a href='#'>Samples</a>
                 <a href='#'>Deals</a>
+                <a href='#'>Samples</a>
+                <a href='#'>Deals</a>
             </div>
             <div className='navbar__right'>
                 <ShoppingCartIcon className='navbar__right__cart' />
