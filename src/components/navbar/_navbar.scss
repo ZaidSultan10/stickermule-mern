@@ -5,23 +5,46 @@
     padding-right: 10px;
 
     .navbar__container{
+        height: 40px;
         margin: 0 auto;
         max-width: 1000px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         .navbar__left{
-
+            width: 100%;
+            flex: 0.7;
+            display: flex;
+            align-items: center;
+            // justify-content: space-around;
             .navbar__left__logo{
                 height: 40px;
                 width: 41px;
             }
+            a{
+                margin-left: 30px;
+                // margin-top: -5px;
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+            }
         }
 
         .navbar__right{
-
+            width: 100%;
+            flex: 0.3;
+            display: flex;
+            align-items: center;
+            // justify-content: space-around;
             .navbar__right__cart{
                 color: white !important;
+            }
+            a{
+                margin-left: 30px;
+                // margin-top: -5px;
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
             }
         }
     }
