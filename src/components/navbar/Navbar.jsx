@@ -4,11 +4,36 @@ import Logo from '../../assets/logo.png'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import MenuIcon from '@mui/icons-material/Menu';
+import StickerLogo from '../../assets/sticker_logo.png'
 
 const Navbar = () => {
 
   const [toggleProductArrow,setToggleProductArrow] = React.useState(false)
   const [toggleToolsArrow,setToggleToolsArrow] = React.useState(false)
+
+  const productMenu = [{
+    label:'Stickers',
+    value:'Stickers'
+  },{
+    label:'Labels',
+    value:'Labels'
+  },{
+    label:'Magnets',
+    value:'Magnets'
+  },{
+    label:'Buttons',
+    value:'Buttons'
+  },{
+    label:'Packaging',
+    value:'Packaging'
+  },{
+    label:'T-Shirts',
+    value:'T-Shirts'
+  },{
+    label:'More',
+    value:'More'
+  }]
 
   return (
     <div className='navbar'>
@@ -19,6 +44,10 @@ const Navbar = () => {
                 <p onClick={() => setToggleToolsArrow(!toggleToolsArrow)}>Tools <span>{toggleToolsArrow ? <ArrowDropUpIcon /> : <ArrowDropDownIcon /> }</span></p>
                 <a href='#'>Samples</a>
                 <a href='#'>Deals</a>
+                <MenuIcon className='navbar__left__hamburger' />
+            </div>
+            <div className='navbar__center'>
+              <img className='navbar__center__image' src={StickerLogo} />
             </div>
             <div className='navbar__right'>
                 <ShoppingCartIcon className='navbar__right__cart' />
