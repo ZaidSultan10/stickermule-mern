@@ -1,0 +1,19 @@
+.options{
+    background-color: #f3f3f3;
+    height: 280px;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+
+    .options__container{
+        background-color: #f3f3f3;
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        place-items: center;
+        // padding: 25px;
+        // justify-content: s;
+    }
+}
