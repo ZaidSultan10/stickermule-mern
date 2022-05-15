@@ -1,12 +1,14 @@
+@import '../../variables.scss';
+
 .options{
-    background-color: #f3f3f3;
+    background-color: $background-color-one;
     height: 280px;
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
 
     .options__container{
-        background-color: #f3f3f3;
+        background-color: $background-color-one;
         max-width: 1000px;
         width: 100%;
         margin: 0 auto;
@@ -14,7 +16,16 @@
         grid-template-columns: repeat(4,1fr);
         place-items: center;
         padding-right: 15px;
-        // padding: 25px;
-        // justify-content: s;
+    }
+}
+
+@media (max-width: $break-point-two){
+    .options{
+    
+        .options__container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            padding-bottom: 10px;
+        }
     }
 }

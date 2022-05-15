@@ -1,6 +1,7 @@
 import React from 'react'
 import './_partners.scss'
 import PartnersImage from '../../assets/partners.webp'
+import PartnerImageResponsive from '../../assets/customers-grid.webp'
 
 const Partners = () => {
   return (
@@ -8,7 +9,7 @@ const Partners = () => {
         <div className='partners__container'>
             <div className='partners__container__top'>
                 <div className='partners__container__topLeft'>
-                    <iframe width="500" height="285" src="https://www.youtube.com/embed/wS24KZon9Io" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/wS24KZon9Io" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div className='partners__container__topRight'>
                     <h1>
@@ -20,7 +21,8 @@ const Partners = () => {
                 </div>
             </div>
             <div className='partners__container__bottom'>
-                <img src={PartnersImage} alt='partners' />
+                <img className='partner__container__bottom__mainImage' src={PartnersImage} alt='partners' />
+                <img className='partner__container__bottom__responsiveImage' src={PartnerImageResponsive} alt='partners' />
             </div>
         </div>    
     </div>

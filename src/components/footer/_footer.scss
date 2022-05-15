@@ -1,5 +1,7 @@
+@import '../../variables.scss';
+
 .footer{
-    background-color: #f3f3f3;
+    background-color: $background-color-one;
     height: 160px;
     margin-top: 30px;
 
@@ -28,7 +30,7 @@
                 width: 100%;
 
                 p{
-                    color: #2b71b8;
+                    color: $footer-options;
                     font-weight: bold;
                 }
             }
@@ -40,7 +42,7 @@
             margin-top: 38px;
 
             .footer__container__bottomLeft{
-                color: #b8b7b7;
+                color: $footer-icons;
                 width: 100%;
                 .footer__container__bottomLeft__icon{
                     font-size: 32px !important;
@@ -57,18 +59,18 @@
                 .privacy__and__terms{
                     margin: 0 20px;
                     p{
-                        color: #2b71b8;
+                        color: $footer-options;
                         font-weight: bold;
 
                         span{
-                            color: #000000;
+                            color: $color-black;
                             font-weight: 400;
                         }
                     }
                 }
                 .sitemap{
                     p{
-                        color: #2b71b8;
+                        color: $footer-options;
                         font-weight: bold;
                     }
                 }

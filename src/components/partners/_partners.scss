@@ -1,27 +1,31 @@
+@import '../../variables.scss';
+
 .partners{
     height: 450px;
 
-    .partners__container{
+    &__container{
         max-width: 1000px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr;
 
-        .partners__container__top{
+        &__top{
             margin-top: 40px;
             display: grid;
             grid-template-columns: repeat(2,1fr);
             grid-gap: 3%;
             width: 100%;
 
-            .partners__container__topLeft{
+            &Left{
                 iframe{
                     border-radius: 12px;
                     overflow: hidden;
+                    width:500px;
+                    height:285px;
                 }
             }
 
-            .partners__container__topRight{
+            &Right{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -36,11 +40,125 @@
             }
         }
 
-        .partners__container__bottom{
+        &__bottom{
             margin: 0 auto;
             margin-top: 40px;
-            img{
+            .partner__container__bottom__mainImage{
                 width: 100%;
+            }
+            .partner__container__bottom__responsiveImage{
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: $break-point-one){
+    .partners{
+    
+        .partners__container{
+            width: 98%;
+            margin: 0 auto;
+            .partners__container__top{
+                
+                .partners__container__topLeft{
+                    iframe{
+                        width:450px;
+                        height:235px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: $break-point-two){
+    .partners{
+        height: 700px;
+        .partners__container{
+    
+            .partners__container__top{
+                margin-top: 40px;
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                width: 100%;
+    
+                .partners__container__topLeft{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    iframe{
+                        border-radius: 12px;
+                        overflow: hidden;
+                        width:100%;
+                    }
+                }
+    
+                .partners__container__topRight{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    h1{
+                        font-size: 28px;
+                        text-align: center;
+                        font-weight: 600;
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 1.4rem;
+                        width: 90%;
+                        text-align: center;
+                    }
+                }
+            }
+    
+            .partners__container__bottom{
+                .partner__container__bottom__mainImage{
+                    display: none;
+                }
+                .partner__container__bottom__responsiveImage{
+                    display: block !important;
+                    width: 400px;
+
+                }
+            }
+        }
+    }
+}
+@media (max-width: $break-point-four){
+    .partners{
+        height: 640px;
+        .partners__container{
+    
+            .partners__container__top{
+
+                .partners__container__topLeft{
+
+                    iframe{
+                        width:300px;
+                        height:135px;
+                    }
+                }
+    
+                .partners__container__topRight{
+                    margin-top: 10px;
+                    h1{
+                        font-size: 24px;
+                        text-align: center;
+                        font-weight: 600;
+                    }
+                    p{
+                        font-size: 13px;
+                    }
+                }
+            }
+    
+            .partners__container__bottom{
+                .partner__container__bottom__responsiveImage{
+                    display: block !important;
+                    width: 300px;
+                }
             }
         }
     }

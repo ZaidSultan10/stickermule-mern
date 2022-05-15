@@ -1,55 +1,193 @@
+@import '../../variables.scss';
+
 .banner{
-    background-color: #f97805;
+    background-color: $color-secondary;
     width: 100%;
 
     .banner__container{
         max-width: 1000px;
         margin: 0 auto;
-        background-color: #f97805;
-        background-image: url(../../assets/banner_image.webp);
-        background-size: contain;
-        background-position: bottom -1px right 0px;
-        background-repeat: no-repeat;
+        background-color: $color-secondary;
         height: 330px;
         padding: 20px 10px;
+        display: flex;
+        width: 100%;
 
-        .banner__container__heading{
-            width: 400px;
-            h1{
-                color: white;
-                font-size: 44px;
+        .banner__container__left{
+            
+            .banner__container__heading{
+                width: 400px;
+                h1{
+                    color: $text-color;
+                    font-size: 44px;
+                }
+            }
+    
+            .banner__container__para{
+                width: 400px;
+                margin-top: 10px;
+                p{
+                    color: $text-color;
+                    font-size: 18px;
+                }
+            }
+    
+            .banner__container__options{
+    
+                margin-top: 20px;
+    
+                button{
+                    width: 170px;
+                    height: 65px;
+                    margin-right: 10px;
+                    color: $text-color;
+                    font-size: 1.4rem;
+                    border-radius: 5px;
+                    border: none;
+                }
+                .banner__container__options__shopNow{
+                    background-color: #5ba4e6;
+                    background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0.09) 0%, rgba(0, 0, 0, 0.09) 100% );
+                }
+                .banner__container__options__samples{
+                    background-color: $color-secondary;
+                    background-image: linear-gradient( to bottom, #ffad00 0%, #ff8700 100% );
+                }
             }
         }
 
-        .banner__container__para{
-            width: 400px;
-            margin-top: 10px;
-            p{
-                color: white;
-                font-size: 18px;
+        .banner__container__right{
+            .banner__container__right__bannerImageMain{
+                width: 600px;
+            }
+            .banner__container__right__bannerImageSecondary{
+                display: none;
             }
         }
+    }
+}
 
-        .banner__container__options{
+@media (max-width: $break-point-one){
+    .banner{
+        width: 100%;
+        .banner__container{
+            width: 100%;
+            .banner__container__left{
+                padding-top: 30px;
+                .banner__container__heading{
+                    h1{
+                        font-size: 38px;
+                    }
+                }
+        
+                .banner__container__options{
 
-            margin-top: 20px;
-
-            button{
-                width: 170px;
-                height: 65px;
-                margin-right: 10px;
-                color: white;
-                font-size: 1.4rem;
-                border-radius: 5px;
-                border: none;
+                    button{
+                        width: 160px;
+                        height: 60px;
+                        font-size: 1.2rem;
+                    }
+                }
             }
-            .banner__container__options__shopNow{
-                background-color: #5ba4e6;
-                background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0.09) 0%, rgba(0, 0, 0, 0.09) 100% );
+    
+            .banner__container__right{
+                
+                .banner__container__right__bannerImageMain{
+                    margin-top: 50px;
+                    width: 500px;
+                }
             }
-            .banner__container__options__samples{
-                background-color: #f97805;
-                background-image: linear-gradient( to bottom, #ffad00 0%, #ff8700 100% );
+        }
+    }
+}
+
+@media (max-width: $break-point-two){
+    .banner{
+        width: 100%;
+        .banner__container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+    
+            .banner__container__left{
+                padding-top: 30px;
+                .banner__container__heading{
+                    h1{
+                        font-size: 38px;
+                    }
+                }
+        
+                .banner__container__options{
+
+                    button{
+                        width: 160px;
+                        height: 60px;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+    
+            .banner__container__right{
+                
+                .banner__container__right__bannerImageMain{
+                    display: none;
+                }
+                .banner__container__right__bannerImageSecondary{
+                    display: block !important;
+                    width: 500px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-point-three){
+    .banner{
+
+        .banner__container{
+            height: 380px;
+    
+            .banner__container__left{
+                width: 100%;
+                padding-top: 60px;
+                .banner__container__heading{
+                    width: 100%;
+                    h1{
+                        font-size: 26px;
+                        text-align: center;
+                    }
+                }
+
+                .banner__container__para{
+                    width: 100%;
+                    p{
+                        text-align: center;
+                    }
+                }
+        
+                .banner__container__options{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    button{
+                        width: 100%;
+                        height: 60px;
+                        font-size: 1.2rem;
+                    }
+                    .banner__container__options__samples{
+                        margin-top: 10px !important;
+                    }
+                }
+            }
+
+            .banner__container__right{
+                .banner__container__right__bannerImageSecondary{
+                    width: 350px;
+                }
             }
         }
     }

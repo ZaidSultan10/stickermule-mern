@@ -1,4 +1,6 @@
+@import '../../../variables.scss';
+
 .footerOption{
-    color: #2b71b8;
+    color: $footer-options;
     font-weight: 500;
 }

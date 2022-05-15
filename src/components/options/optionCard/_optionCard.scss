@@ -1,3 +1,4 @@
+@import '../../../variables.scss';
 .optionCard{
     display: flex;
     flex-direction: column;
@@ -8,5 +9,14 @@
         font-size: 16px;
         font-weight: 500;
         margin-top: 8px;
+    }
+}
+
+@media (max-width: $break-point-two){
+    .optionCard{
+        img{
+            width: 150px;
+            height: 115px;
+        }
     }
 }
