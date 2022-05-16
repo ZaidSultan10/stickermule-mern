@@ -53,8 +53,8 @@ const Navbar = () => {
             </div>
             <div className='navbar__right'>
                 <ShoppingCartIcon className='navbar__right__cart' />
-                <a href='#' onClick={() => navigate(`/login`)}>Log in</a>
-                <a href='#'>Sign up</a>
+                <a onClick={() => navigate(`/login`)}>Log in</a>
+                <a onClick={() => navigate(`/signup`)}>Sign up</a>
             </div>
         </div>
     </div>

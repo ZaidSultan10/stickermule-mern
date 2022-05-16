@@ -8,6 +8,8 @@ import {
   Route,
 } from "react-router-dom";
 import Login from './pages/login/Login';
+import Signup from './pages/signup/Signup';
+import ForgotPassword from './pages/forgotPassword/ForgotPassword';
 
 function App() {
   return (
@@ -19,8 +21,10 @@ function App() {
             </Route>
             <Route path="login" element={<Login />}>
             </Route>
-            {/* <Route path="course/:id" element={<CourseContent />}>
-            </Route> */}
+            <Route path="signup" element={<Signup />}>
+            </Route>
+            <Route path="password/recover" element={<ForgotPassword />}>
+            </Route>
           </Routes>
       </BrowserRouter>
     </div>

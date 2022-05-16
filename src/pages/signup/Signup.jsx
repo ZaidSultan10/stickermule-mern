@@ -1,12 +1,12 @@
 import React from 'react'
 import LoginCard from '../../components/loginCard/LoginCard'
 
-const Login = () => {
+const Signup = () => {
   return (
-    <div className='login'>
-        <LoginCard signupFlag={false} />
+    <div className='signup'>
+        <LoginCard signupFlag={true} />    
     </div>
   )
 }
 
-export default Login
+export default Signup

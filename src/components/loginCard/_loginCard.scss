@@ -3,4 +3,17 @@
 .loginCard{
     background-color:$color-secondary ;
     height: calc(100vh - 42px);
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    background-image: url(../../assets/login_image.png);
+    background-repeat: no-repeat;
+    background-position: bottom -150px left -300px;
+    background-size: 700px;
+}
+
+@media (max-width: $break-point-four){
+    .loginCard{
+        background-image: none;
+    }
 }

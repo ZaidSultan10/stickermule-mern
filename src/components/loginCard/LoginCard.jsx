@@ -2,10 +2,10 @@ import React from 'react'
 import LoginCardComponent from './loginCardComponent/LoginCardComponent'
 import './_loginCard.scss'
 
-const LoginCard = () => {
+const LoginCard = ({signupFlag}) => {
   return (
     <div className='loginCard'>
-        <LoginCardComponent />    
+        <LoginCardComponent signupFlag={signupFlag} />    
     </div>
   )
 }
