@@ -19,8 +19,6 @@ const Footer = () => {
           <div className='footer__container__topRight'>
               <p>{`English (EN) $USD`}</p>
           </div>
-        </div>
-        <div className='footer__container__bottom'>
           <div className='footer__container__bottomLeft'>
               <YouTubeIcon className='footer__container__bottomLeft__icon' />
               <YouTubeIcon className='footer__container__bottomLeft__icon space'/>

@@ -4,3 +4,19 @@
     color: $footer-options;
     font-weight: 500;
 }
+
+@media (max-width: $break-point-one){
+    .footerOption{
+        margin: 0 10px;
+    }
+}
+@media (max-width: $break-point-three){
+    .footerOption{
+        margin-top: 20px;
+    }
+}
+@media (max-width: $break-point-four){
+    .footerOption{
+        font-size: 14px;
+    }
+}

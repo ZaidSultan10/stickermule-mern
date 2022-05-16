@@ -1,0 +1,6 @@
+@import '../../variables.scss';
+
+.loginCard{
+    background-color:$color-secondary ;
+    height: calc(100vh - 42px);
+}
