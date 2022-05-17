@@ -44,8 +44,8 @@ const Navbar = () => {
                 <img onClick={() => navigate(`/`)} src={Logo} className='navbar__left__logo' />
                 <p onClick={() => setToggleProductArrow(!toggleProductArrow)}>Products <span>{toggleProductArrow ? <ArrowDropUpIcon /> : <ArrowDropDownIcon /> }</span></p>
                 <p onClick={() => setToggleToolsArrow(!toggleToolsArrow)}>Tools <span>{toggleToolsArrow ? <ArrowDropUpIcon /> : <ArrowDropDownIcon /> }</span></p>
-                <a href='#'>Sampless</a>
-                <a href='#'>Deals</a>
+                <a href='#'>Samples</a>
+                <a onClick={() => navigate(`/deals`)}>Deals</a>
                 <MenuIcon className='navbar__left__hamburger' />
             </div>
             <div className='navbar__center'>
