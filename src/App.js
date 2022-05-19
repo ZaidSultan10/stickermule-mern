@@ -28,6 +28,8 @@ function App() {
             </Route>
             <Route path="deals" element={<DealsPage />}>
             </Route>
+            {/* <Route path="deals" element={<DealsPage />}>
+            </Route> */}
           </Routes>
       </BrowserRouter>
     </div>
