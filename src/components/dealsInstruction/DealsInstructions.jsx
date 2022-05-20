@@ -3,7 +3,7 @@ import './_dealsInstructions.scss'
 
 const DealsInstructions = () => {
   return (
-    <div>DealsInstructions</div>
+    <div>DealsInstructions pure</div>
   )
 }
 
