@@ -1,9 +1,14 @@
 import React from 'react'
+import DealsInstructionCard from './dealsInstructionCard/DealsInstructionCard'
 import './_dealsInstructions.scss'
 
 const DealsInstructions = () => {
   return (
-    <div>DealsInstructions pure</div>
+    <div className='dealsInstructions'>
+      <DealsInstructionCard />
+      <DealsInstructionCard />
+      <DealsInstructionCard />
+    </div>
   )
 }
 
