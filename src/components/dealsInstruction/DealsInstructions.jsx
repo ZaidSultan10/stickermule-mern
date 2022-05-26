@@ -29,10 +29,11 @@ const DealsInstructions = () => {
       {
         deals && deals.map((item) => (
           <DealsInstructionCard 
-          imageUrl = {item.imageUrl}
-          heading = {item.heading}
-          paragraph = {item.paragraph}
-          link = {item.link} />
+            imageUrl = {item.imageUrl}
+            heading = {item.heading}
+            paragraph = {item.paragraph}
+            link = {item.link}
+           />
         ))
       }
     </div>
