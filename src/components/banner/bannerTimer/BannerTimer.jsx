@@ -2,7 +2,7 @@ import React from 'react'
 
 const BannerTimer = () => {
   return (
-    <div>BannerTimer</div>
+    <div>BannerTimercomp</div>
   )
 }
 
